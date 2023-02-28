@@ -7,5 +7,7 @@ const datos = fetch(url)
 function mostrarData(info) {
     console.log(info)
     document.getElementById('name').innerHTML = info[0].name
-    document.getElementById('name').innerHTML = info[0].name
+    document.getElementById('mail').innerHTML = info[0].email
+    document.getElementById('phone').innerHTML = info[0].phone
+    document.getElementById('firstName').innerHTML = info[0].name.split(' ')[0]
 }
